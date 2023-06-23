@@ -1,0 +1,126 @@
+.bcs_box > div {
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto 3px;
+    float: left;
+    max-width: 280px;
+}
+
+.bcs_box .bcs_icon {
+    width: 40%;
+    max-width: 120px;
+    min-height: 100px;
+    min-width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bcs_box .bcs_label {
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #5a595d;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.bcs_box.bcs_showall .bcs_icon {
+    background-image: url([[pix:block_courses_status|showall]]);
+}
+
+.bcs_box.bcs_enrolled .bcs_icon {
+    background-image: url([[pix:block_courses_status|enrolled]]);
+}
+
+.bcs_box.bcs_ended .bcs_icon {
+    background-image: url([[pix:block_courses_status|ended]]);
+}
+
+.bcs_box.bcs_inprogress .bcs_icon {
+    background-image: url([[pix:block_courses_status|inprogress]]);
+}
+
+.bcs_box.bcs_pending .bcs_icon {
+    background-image: url([[pix:block_courses_status|pending]]);
+}
+
+.bcs_box.bcs_open .bcs_icon {
+    background-image: url([[pix:block_courses_status|open]]);
+}
+
+.bcs_box.bcs_others .bcs_icon {
+    background-image: url([[pix:block_courses_status|others]]);
+}
+
+.bcs_box.bcs_coming .bcs_icon {
+    background-image: url([[pix:block_courses_status|coming]]);
+}
+
+/* datapanel */
+.block_courses_status_datapanel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.block_courses_status_datapanel label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.block_courses_status_datapanel .list-group {
+    margin: 0;
+    padding: 0;
+}
+
+.block_courses_status_datapanel .list-group-item {
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+}
+
+.block_courses_status_datapanel > .list-group:last-child .list-group-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.block_courses_status_datapanel strong {
+    margin-bottom: 10px;
+    font-size: 110%;
+    border-bottom: 1px dashed #999;
+    display: block;
+}
+
+.block_courses_status_datapanel .courseimage {
+    text-align: center;
+}
+
+.block_courses_status_datapanel .courseimage img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#page-blocks-courses_status-view .courselist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+    .block_courses_status_datapanel {
+        float: left;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+}
